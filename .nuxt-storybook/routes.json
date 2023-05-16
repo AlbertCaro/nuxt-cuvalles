@@ -1,0 +1,23 @@
+[
+  {
+    "name": "about_me",
+    "path": "/about_me",
+    "component": "C:\\\\Users\\\\alber\\\\Projects\\\\nuxt-cuvalles\\\\pages\\\\about_me.vue",
+    "chunkName": "pages/about_me",
+    "_name": "_0e84d098"
+  },
+  {
+    "name": "inspire",
+    "path": "/inspire",
+    "component": "C:\\\\Users\\\\alber\\\\Projects\\\\nuxt-cuvalles\\\\pages\\\\inspire.vue",
+    "chunkName": "pages/inspire",
+    "_name": "_ce4748c0"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\alber\\\\Projects\\\\nuxt-cuvalles\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_671e4918"
+  }
+]
