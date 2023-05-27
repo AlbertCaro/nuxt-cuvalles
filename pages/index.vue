@@ -83,5 +83,15 @@
 <script>
 export default {
   name: 'IndexPage',
+
+  middleware: 'auth',
+
+  data: () => ({
+    laboratorios: []
+  }),
+
+  beforeMount() {
+    debugger
+  }
 }
 </script>

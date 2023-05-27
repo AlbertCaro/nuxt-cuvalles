@@ -22,6 +22,16 @@
             <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+        <v-list-item @click="logout">
+          <v-list-item-action>
+            <v-icon>
+              mdi-logout
+            </v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            Logout
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" fixed app>
@@ -65,6 +75,7 @@
 <script>
 export default {
   name: 'DefaultLayout',
+
   data() {
     return {
       clipped: false,
@@ -86,6 +97,14 @@ export default {
       right: true,
       rightDrawer: false,
       title: 'Vuetify.js',
+    }
+  },
+
+  methods: {
+    async logout() {
+      this.$auth.logout()
+
+      this.$router.push('/login')
     }
   },
 }
