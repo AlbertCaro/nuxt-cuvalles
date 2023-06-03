@@ -86,12 +86,8 @@ export default {
 
   middleware: 'auth',
 
-  data: () => ({
-    laboratorios: []
-  }),
-
   beforeMount() {
-    debugger
+    this.$store.commit('setTitle', 'Bienvenido/a')
   }
 }
 </script>

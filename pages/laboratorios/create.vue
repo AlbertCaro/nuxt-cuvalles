@@ -40,6 +40,7 @@ export default {
         async guardar() {
             try {
                 const response = await this.$axios.post('/laboratorios', this.laboratorio)
+                this.$nuxt.$emit('show-snackbar', 'green', response.data.message)
                 this.$router.push('/laboratorios')
             } catch (error) {
 
